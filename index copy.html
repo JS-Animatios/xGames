@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="    viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="form.js"></script>
+<link rel="stylesheet" href="style.css">
+    <title>Login System</title>
+</head>
+<body>
+  
+<div id="login-box">
+  <div class="left">
+    <h1 id='status'>Login</h1>
+    <input type="text" id="email" name="email" placeholder="E-mail" />
+    <input type="password" id="password" name="password" placeholder="Password" />
+    
+    <input type="submit" id='login' onClick="signIn()" name="login" value="Login" />
+
+  </div>
+  
+  <div class="right">
+    <h1 id='status'>Request account creation</h1>
+    
+    <h5>You can't create an account like you normally would. I could make it happen, but I dont want random people using this. So you need to fill out a form to get an account. If you need an account, click the button below:</h5>
+    <a href="https://forms.gle/egMWwpcCCmkeqDER6" target="_blank"><button class="social-signin twitter">Request Account</button></a>
+  </div>
+  <div class="or">?></div>
+</div>
+</body>
+
+
+</html>
